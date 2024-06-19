@@ -3,22 +3,27 @@ This repository was created to learn the basics of Expo (19 June 2024).
 * [Official Docs](https://docs.expo.dev/)
 
 ## Creating a New Project
-### Intialise a new Expo app
+### 1. Intialise a new Expo app
 ```
 npx create-expo-app <Directory Name>
-cd <Directory Name>
 ```
+
 #### Install the minimum required libraries for a new project
 ```
 npx create-expo-app <Directory Name> --template blank
 ```
 
-### Install dependencies to run the project on the web
+#### 2. Move to directory of project
+```
+cd <Directory Name>
+```
+
+### 3. Install dependencies to run the project on the web
 ```
 npx expo install react-dom react-native-web @expo/metro-runtime
 ```
 
-### Run the app on mobile and web
+### 4. Run the app on mobile and web
 ```
 npx expo start
 ```
