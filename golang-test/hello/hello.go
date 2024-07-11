@@ -19,7 +19,13 @@ func main() { // main function executes by default when you run the main package
 	log.SetFlags(0)
 
 	// Request a greeting message and print it
-	message, err := greetings.Hello("")
+	message, err := greetings.Hello("Finn")
+
+	// A slice of names
+	names := []string{"Gladys", "Samantha", "Darrin"}
+	// Request a greeting message and print it
+	messages, err := greetings.Hellos(names)
+
 	// If an error was returned, print it to the console and exit the program
 	if err != nil {
 		log.Fatal(err)
@@ -27,4 +33,5 @@ func main() { // main function executes by default when you run the main package
 
 	// If no error was returned, print the returned message to the console
 	fmt.Println(message)
+	fmt.Println(messages)
 }
