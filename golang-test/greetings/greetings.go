@@ -18,6 +18,7 @@ func Hello(name string) (string, error) {
 	//If a name was received, return a greeting that embeds the name in a message.
 	// - Message is created with a random format
 	message := fmt.Sprintf(randomFormat(), name)
+	// message := fmt.Sprintf(randomFormat())
 	// ':=' is a shortcut for declaring and initialising a variable in one line (value on right is used to determine 'message' variable's type)
 	// long way:
 	// var message string
