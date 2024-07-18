@@ -77,6 +77,7 @@ func GetPost(c *gin.Context) {
 		c.JSON(500, gin.H{
 			"error": result.Error,
 		})
+		return
 	}
 	c.JSON(200, gin.H{
 		"data": post,
@@ -101,6 +102,7 @@ func UpdatePost(c *gin.Context) {
 		c.JSON(500, gin.H{
 			"error": result.Error,
 		})
+		return
 	}
 
 	inits.DB.Model(&post).Updates(models.Post{
